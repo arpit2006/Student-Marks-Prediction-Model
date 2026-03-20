@@ -11,12 +11,21 @@ This project is an **end-to-end machine learning regression model** that predict
 - Preprocessing using **Pipeline** and **ColumnTransformer**  
 - Multiple regression models:
   - Linear Regression  
-  - Decision Tree Regressor  
+  - Decision Tree Regressor ✅ (Best Performing Model)  
   - Random Forest Regressor  
 - Model evaluation using:
   - RMSE (Root Mean Squared Error)  
   - R² Score  
 - Export predictions to CSV  
+
+---
+
+## 🏆 Best Model  
+After evaluating all models, the **Decision Tree Regressor** performed the best based on:  
+- Lowest RMSE  
+- Highest R² Score  
+
+This indicates that the model captures non-linear relationships in the data more effectively than other models.
 
 ---
 
@@ -78,4 +87,5 @@ This project demonstrates practical machine learning skills:
 - Data preprocessing pipelines  
 - Stratified sampling  
 - Regression modeling  
-- Model evaluation techniques
+- Model selection and evaluation  
+- Understanding non-linear relationships in data
