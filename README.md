@@ -1,47 +1,81 @@
+# 🎓 Student Marks Prediction Model  
 
-# 🎓 Student Marks Prediction Model
+## 📌 Overview  
+This project is an **end-to-end machine learning regression model** that predicts student marks based on study hours. It covers the full ML workflow including preprocessing, stratified sampling, pipelines, and multiple regression models.
 
-## 📌 Overview
-This project is an end-to-end machine learning regression model that predicts student marks based on study hours. It includes data preprocessing, stratified sampling, pipeline-based feature transformation, and regression models.
+---
 
-## 🧠 Features
-- Data cleaning and exploratory analysis  
+## 🧠 Features  
+- Data cleaning and exploratory data analysis (EDA)  
 - Stratified train–test split  
-- Preprocessing with `Pipeline` and `ColumnTransformer`  
-- Models used:
+- Preprocessing using **Pipeline** and **ColumnTransformer**  
+- Multiple regression models:
   - Linear Regression  
   - Decision Tree Regressor  
   - Random Forest Regressor  
-- Evaluation using **RMSE** and **R² score**  
-- Predictions exported to CSV  
+- Model evaluation using:
+  - RMSE (Root Mean Squared Error)  
+  - R² Score  
+- Export predictions to CSV  
 
-## 📂 Project Structure
+---
+
+## 📂 Project Structure  
+```
 student-marks-prediction/
 │
-├── notebook.ipynb          # Jupyter notebook with EDA, pipeline, and model training
-├── model.py                # Python script for training and predicting with models
-├── StudentMarksDataset.csv # Original dataset
-├── test_data.csv           # Test set generated via stratified split
-├── prediction.csv          # Final predictions on test set
-├── README.md               # Project overview and instructions
-└── LICENSE                 # MIT License file
+├── notebook.ipynb           # EDA, preprocessing, training
+├── model.py                 # Script for training & prediction
+├── StudentMarksDataset.csv  # Original dataset
+├── test_data.csv            # Test dataset (stratified split)
+├── prediction.csv           # Model predictions
+├── README.md                # Project documentation
+└── LICENSE                  # MIT License
+```
 
-## ⚙️ Technologies Used
+---
+
+## ⚙️ Technologies Used  
 - Python  
-- NumPy, Pandas, Matplotlib  
+- NumPy  
+- Pandas  
+- Matplotlib  
 - Scikit-learn  
 
-## 📊 Model Evaluation
-- Root Mean Squared Error (RMSE)  
-- R² Score  
+---
 
-## 🚀 How to Run
-1. Clone the repository  
-2. Install dependencies (`pip install -r requirements.txt`)  
-3. Run the notebook to train models and generate predictions  
+## 📊 Model Evaluation  
+- **RMSE (Root Mean Squared Error)** → Measures prediction error  
+- **R² Score** → Measures model accuracy  
 
-## 📄 License
+---
+
+## 🚀 How to Run  
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/student-marks-prediction.git
+
+# Navigate into the project
+cd student-marks-prediction
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run Jupyter Notebook
+jupyter notebook
+```
+
+---
+
+## 📄 License  
 This project is licensed under the **MIT License**.
 
-## 📌 Learning Outcome
-This project demonstrates practical ML skills: preprocessing pipelines, stratified sampling, regression modeling, and evaluation metrics.
+---
+
+## 📌 Learning Outcome  
+This project demonstrates practical machine learning skills:
+- Data preprocessing pipelines  
+- Stratified sampling  
+- Regression modeling  
+- Model evaluation techniques
