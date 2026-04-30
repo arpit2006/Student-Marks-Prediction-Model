@@ -30,17 +30,20 @@ This indicates that the model captures non-linear relationships in the data more
 ---
 
 ## 📂 Project Structure  
+
 ```
 student-marks-prediction/
 │
 ├── notebook.ipynb           # EDA, preprocessing, training
 ├── model.py                 # Script for training & prediction
+├── main.py                  # Streamlit UI app
 ├── StudentMarksDataset.csv  # Original dataset
 ├── test_data.csv            # Test dataset (stratified split)
 ├── prediction.csv           # Model predictions
 ├── README.md                # Project documentation
 └── LICENSE                  # MIT License
 ```
+
 
 ---
 
@@ -50,6 +53,7 @@ student-marks-prediction/
 - Pandas  
 - Matplotlib  
 - Scikit-learn  
+- Streamlit  
 
 ---
 
@@ -73,19 +77,34 @@ pip install -r requirements.txt
 
 # Run Jupyter Notebook
 jupyter notebook
+---
+
+```bash
+# Clone the repository
+- Regression modeling  
+
+# Navigate into the project
+cd student-marks-prediction
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit UI
+streamlit run main.py
+
+# (Optional) Run Jupyter Notebook for EDA and training
+jupyter notebook
 ```
 
 ---
 
-## 📄 License  
-This project is licensed under the **MIT License**.
+## 🖥️ Streamlit UI
+This project now includes a **Streamlit web UI** for easy interaction and predictions. Launch it with:
 
----
+```bash
+streamlit run main.py
+```
 
-## 📌 Learning Outcome  
-This project demonstrates practical machine learning skills:
-- Data preprocessing pipelines  
-- Stratified sampling  
-- Regression modeling  
+Open the provided local URL in your browser to use the app.
 - Model selection and evaluation  
 - Understanding non-linear relationships in data
