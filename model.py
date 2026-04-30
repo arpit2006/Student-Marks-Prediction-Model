@@ -82,8 +82,8 @@ print("Linear Model")
 lin_reg = LinearRegression() #Creating an instance of the Linear Regression model (a simple linear approach to regression tasks)
 lin_model = lin_reg.fit(final_data,data_predictions)
 lin_predictions = lin_model.predict(final_data)
-lin_rmse = root_mean_squared_error(data_predictions, lin_pred)
-r2_percent = r2_score(data_predictions, lin_pred) * 100
+lin_rmse = root_mean_squared_error(data_predictions, lin_predictions)
+r2_percent = r2_score(data_predictions, lin_predictions) * 100
 print(lin_predictions)
 print(lin_rmse)
 print(r2_percent)
